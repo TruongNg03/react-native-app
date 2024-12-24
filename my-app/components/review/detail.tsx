@@ -1,9 +1,10 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { OPENSANS_REGULAR } from '../../utils/const';
 
 const styles = StyleSheet.create({
   review: {
     fontSize: 30,
-    fontFamily: 'OpenSans-Regular',
+    fontFamily: OPENSANS_REGULAR,
   },
 });
 

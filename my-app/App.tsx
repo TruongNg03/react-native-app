@@ -2,6 +2,7 @@ import { View, Text } from 'react-native';
 import HomeScreen from './components/review/home';
 import DetailScreen from './components/review/detail';
 import AboutScreen from './components/review/about';
+import { OPENSANS_REGULAR } from './utils/const';
 
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
@@ -11,7 +12,7 @@ SplashScreen.preventAutoHideAsync();
 
 const App = () => {
   const [loaded, error] = useFonts({
-    'OpenSans-Regular': require('./assets/fonts/OpenSans-Regular.ttf'),
+    [OPENSANS_REGULAR]: require('./assets/fonts/OpenSans-Regular.ttf'),
   });
 
   useEffect(() => {
